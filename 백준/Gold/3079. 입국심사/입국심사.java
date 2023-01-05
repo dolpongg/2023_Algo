@@ -12,11 +12,11 @@ public class Main {
 		int N = Integer.parseInt(st.nextToken());
 		long M = Integer.parseInt(st.nextToken());
 		
-		int[] arr = new int[N];
+		long[] arr = new long[N];
 		long min = Integer.MAX_VALUE;
 		long max = 0;
 		for(int i = 0; i < N; i++) {
-			arr[i] = Integer.parseInt(br.readLine());
+			arr[i] = Long.parseLong(br.readLine());
 			if(arr[i] < min) min = arr[i];
 			if(arr[i] > max) max = arr[i];
 		}
