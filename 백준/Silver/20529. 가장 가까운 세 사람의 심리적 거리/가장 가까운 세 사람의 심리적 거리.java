@@ -22,13 +22,7 @@ public class Main {
 		outer:for(int tc = 0; tc < testCase; tc++) {
 			st = new StringTokenizer(br.readLine());
 			int N = Integer.parseInt(st.nextToken());
-			
-			if(N > 32) {
-				sb.append(0).append("\n");
-				br.readLine();
-				continue;
-			}
-			
+
 			Map<String, Integer> map = new HashMap<>();
 			st = new StringTokenizer(br.readLine());
 			
