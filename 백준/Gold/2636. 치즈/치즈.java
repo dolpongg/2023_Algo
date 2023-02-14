@@ -33,8 +33,9 @@ public class Main {
 			}
 		}
 		
-		System.out.println(hour);
-		System.out.println(rest);
+		StringBuilder sb = new StringBuilder();
+		sb.append(hour).append("\n").append(rest);
+		System.out.println(sb);
 		
 	}
 	private static int delete() {
@@ -52,11 +53,10 @@ public class Main {
 				int nc = cur[1] + delta[1];
 				
 				if(isIn(nr,nc) && !visited[nr][nc]) {
+					visited[nr][nc] = true;
 					if(map[nr][nc] == 0) {
-						visited[nr][nc] = true;
 						q.offer(new int[] {nr,nc});
 					}else {
-						visited[nr][nc] = true;
 						map[nr][nc] = 0;
 						cnt++;
 					}
