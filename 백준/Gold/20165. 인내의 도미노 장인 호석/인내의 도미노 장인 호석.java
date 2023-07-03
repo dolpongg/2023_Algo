@@ -10,16 +10,17 @@ public class Main {
 	static int[][] map;
 	static char[][] answer;
 	static int point = 0;
-	static HashMap<String,int[]> deltas = new HashMap() {{
-		put("E", new int[] {0,1});
-		put("W", new int[] {0,-1});
-		put("S", new int[] {1,0});
-		put("N", new int[] {-1,0});
-	}};
+	static HashMap<String,int[]> deltas;
 	
 	public static void main(String[] args) throws IOException {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			StringTokenizer st = new StringTokenizer(br.readLine());
+			
+			deltas = new HashMap<>();
+			deltas.put("E", new int[] {0,1});
+			deltas.put("W", new int[] {0,-1});
+			deltas.put("S", new int[] {1,0});
+			deltas.put("N", new int[] {-1,0});
 			
 			R = Integer.parseInt(st.nextToken());
 			C = Integer.parseInt(st.nextToken());
