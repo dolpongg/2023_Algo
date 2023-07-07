@@ -58,7 +58,7 @@ public class Main {
 	private static void dfs(int cctvNum, int blind) {
 		
 		if(cctvNum == cctvCount) {
-//			answer = Integer.min(answer, blind);
+			answer = Integer.min(answer, blind);
 			
 //			for(int r = 0; r < R; r++) {
 ////				System.out.println(Arrays.toString(map[r]));
@@ -68,12 +68,12 @@ public class Main {
 //				System.out.println("");
 //			}
 //			System.out.println("------");
-			int count = (int) Arrays.stream(map)  // 2차원 배열을 스트림으로 변환
-				    .flatMapToInt(Arrays::stream)  // 내부 배열을 펼쳐서 하나의 스트림으로 만듦
-				    .filter(num -> num == 0)  // 0인 요소만 필터링
-				    .count();  // 요소 개수를 세어 반환
-			
-			answer = Integer.min(answer,count);
+//			int count = (int) Arrays.stream(map)  // 2차원 배열을 스트림으로 변환
+//				    .flatMapToInt(Arrays::stream)  // 내부 배열을 펼쳐서 하나의 스트림으로 만듦
+//				    .filter(num -> num == 0)  // 0인 요소만 필터링
+//				    .count();  // 요소 개수를 세어 반환
+//			
+//			answer = Integer.min(answer,count);
 			return;
 		}
 		
