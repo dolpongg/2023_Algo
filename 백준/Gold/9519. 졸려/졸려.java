@@ -15,8 +15,8 @@ public class Main {
 		String input = sb.toString();
 		int len = sb.length();
 		
-		LinkedHashSet<String> set = new LinkedHashSet<>();
-		set.add(input);
+		List<String> list = new ArrayList<>();
+		list.add(input);
 		for(int n = 0; n < N; n++) {
 			StringBuilder front = new StringBuilder();
 			StringBuilder back = new StringBuilder();
@@ -28,12 +28,14 @@ public class Main {
 			
 			sb = new StringBuilder();
 			sb.append(front).append(back.reverse());
+			String after = sb.toString();
 			
-			if(!set.add(sb.toString())) break;
+			if(input.equals(after)) break;
+			list.add(after);
 		}
-		N = N%set.size();
+		N = N%list.size();
 		
-		System.out.println(set.toArray()[N]);
+		System.out.println(list.get(N));
 		
 	}
 	
