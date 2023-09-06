@@ -4,11 +4,11 @@
 
 ### 성능 요약
 
-메모리: 50260 KB, 시간: 292 ms
+메모리: 49976 KB, 시간: 292 ms
 
 ### 분류
 
-구현, 브루트포스 알고리즘, 시뮬레이션
+브루트포스 알고리즘, 구현, 시뮬레이션
 
 ### 문제 설명
 
@@ -44,7 +44,7 @@
 <table class="table table-bordered" style="width: 100%;">
 	<tbody>
 		<tr>
-			<td style="width: 33%; text-align: center;"><img alt="" src="https://upload.acmicpc.net/c144c31e-db45-4094-9c1d-0656a690aef0/-/preview/" style="width: 300px; height: 303px;"></td>
+			<td style="width: 33%; text-align: center;"><img alt="" src="" style="width: 300px; height: 303px;"></td>
 			<td style="width: 33%; text-align: center;"><img alt="" src="" style="width: 300px; height: 305px;"></td>
 			<td style="width: 34%; text-align: center;"><img alt="" src="" style="width: 300px; height: 302px;"></td>
 		</tr>

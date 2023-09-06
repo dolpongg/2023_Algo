@@ -105,15 +105,6 @@ public class Main {
                 debug[r][c] = 2;
             }
         }
-//        System.out.println("====2");
-//        for(int r = 1; r <= N; r++) {
-//    		for(int c = 1; c <= N; c++) {
-//    			System.out.print(debug[r][c] + " ");
-//    		}
-//    		System.out.println();
-//    	}
-//        
-//     
 
         // 3 
         //3번 선거구: x+d1 ≤ r ≤ N, 1 ≤ c < y-d1+d2
@@ -144,15 +135,6 @@ public class Main {
         }
         
 
-//        System.out.println("====4");
-//        for(int r = 1; r <= N; r++) {
-//    		for(int c = 1; c <= N; c++) {
-//    			System.out.print(debug[r][c] + " ");
-//    		}
-//    		System.out.println();
-//    	}
-        
-
         // 5
         sum[4] = total;
 
@@ -163,18 +145,6 @@ public class Main {
         // 정렬
         Arrays.sort(sum);
 
-//        // 최대 - 최소
-//        if(min > sum[4] - sum[0]) {
-//        	System.out.println("=====================");
-//        	for(int r = 1; r <= N; r++) {
-//        		for(int c = 1; c <= N; c++) {
-//        			System.out.print(debug[r][c] + " ");
-//        		}
-//        		System.out.println();
-//        	}
-//        	
-//        	
-//        }
         min = Math.min(min, sum[4] - sum[0]);
     }
 	
